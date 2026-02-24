@@ -30,8 +30,30 @@
     </header>
 
     <section class="visualizer-wrap" aria-label="Londy vibe visualizer">
+      <div class="visualizer-controls" aria-label="Music visualizer controls">
+        <div class="source-buttons" role="group" aria-label="Visualizer source options">
+          <button id="viz-demo" class="btn btn-primary" type="button">Demo Mode</button>
+          <button id="viz-tab" class="btn btn-ghost" type="button">Capture Tab Audio</button>
+          <button id="viz-mic" class="btn btn-ghost" type="button">Use Mic</button>
+          <button id="viz-file-btn" class="btn btn-ghost" type="button">Load Song File</button>
+          <input id="viz-file" type="file" accept="audio/*" hidden>
+        </div>
+        <div class="visualizer-meta">
+          <p id="viz-status" class="viz-status">Mode: Demo signal (audio-reactive simulation)</p>
+          <p class="viz-hint">
+            Works with <strong>Spotify Web</strong> and <strong>Apple Music Web</strong> via
+            tab-audio capture in supported browsers. Native app playback can use mic input.
+          </p>
+          <div class="viz-readouts" aria-live="polite">
+            <span id="viz-stage">Stage 1 / 5</span>
+            <span id="viz-time">00:00</span>
+            <span id="viz-energy">Energy 0%</span>
+          </div>
+        </div>
+      </div>
       <canvas id="visualizer" width="1600" height="700"></canvas>
-      <div class="visualizer-label">LONDY ZONE FREQUENCY</div>
+      <div class="visualizer-label">ZONER SPECTRUM / PRIMARY COLOR MODE</div>
+      <audio id="viz-audio" preload="metadata" hidden></audio>
     </section>
 
     <section id="mission" class="mission">
