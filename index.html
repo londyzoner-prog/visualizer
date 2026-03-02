@@ -3,134 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LondyZone | Zoners Supporting Zoners</title>
+  <title>Zoner Visualizer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=ocean2">
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
-  <div class="grid-overlay" aria-hidden="true"></div>
+  <main class="viz-app" aria-label="Zoner polygon fish visualizer">
+    <canvas id="visualizer" width="1600" height="900" aria-label="Audio reactive fish visualizer"></canvas>
 
-  <main class="page">
-    <header class="hero">
-      <p class="kicker">Global NGO Movement</p>
-      <h1>LondyZone</h1>
-      <p class="subhead">
-        Zoners supporting Zoners worldwide with direct financial assistance, practical resources,
-        and accountable community power.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#mission">Our Mission</a>
-        <a class="btn btn-ghost" href="#featured">Featured Voices</a>
-        <a class="btn btn-sol" href="#donate">Donate SOL</a>
+    <section class="control-dock" aria-label="Visualizer controls">
+      <div class="source-buttons" role="group" aria-label="Audio source">
+        <button id="viz-demo" class="dock-btn is-active" type="button">DEMO</button>
+        <button id="viz-tab" class="dock-btn" type="button">TAB</button>
+        <button id="viz-mic" class="dock-btn" type="button">MIC</button>
+        <button id="viz-file-btn" class="dock-btn" type="button">FILE</button>
+        <input id="viz-file" type="file" accept="audio/*" hidden>
       </div>
-    </header>
 
-    <section class="visualizer-wrap" aria-label="Londy vibe visualizer">
-      <div class="visualizer-controls" aria-label="Music visualizer controls">
-        <div class="source-buttons" role="group" aria-label="Visualizer source options">
-          <button id="viz-demo" class="btn btn-primary" type="button">Demo Mode</button>
-          <button id="viz-tab" class="btn btn-ghost" type="button">Capture Tab Audio</button>
-          <button id="viz-mic" class="btn btn-ghost" type="button">Use Mic</button>
-          <button id="viz-file-btn" class="btn btn-ghost" type="button">Load Song File</button>
-          <input id="viz-file" type="file" accept="audio/*" hidden>
-        </div>
-        <div class="visualizer-meta">
-          <p id="viz-status" class="viz-status">Mode: Demo signal (audio-reactive simulation)</p>
-          <p class="viz-hint">
-            Works with <strong>Spotify Web</strong> and <strong>Apple Music Web</strong> via
-            tab-audio capture in supported browsers. Native app playback can use mic input.
-          </p>
-          <div class="viz-readouts" aria-live="polite">
-            <span id="viz-stage">Stage 1 / 5</span>
-            <span id="viz-time">00:00</span>
-            <span id="viz-energy">Energy 0%</span>
-          </div>
-        </div>
-      </div>
-      <canvas id="visualizer" width="1600" height="700"></canvas>
-      <div class="visualizer-label">ZONER SPECTRUM / PRIMARY COLOR MODE</div>
-      <audio id="viz-audio" preload="metadata" hidden></audio>
-    </section>
-
-    <section id="mission" class="mission">
-      <h2>Built For Real Impact</h2>
-      <p>
-        LondyZone is a global NGO dedicated to empowering Zoners worldwide, ensuring they achieve
-        their Londy goals and live well. We provide direct financial assistance, resources, and
-        a strong community support system.
-      </p>
-      <p>
-        Our mission uplifts individuals in education, entrepreneurship, healthcare, and personal
-        growth. Funds are dispersed transparently based on verified requests, so support reaches
-        where it is needed most.
-      </p>
-      <p>
-        With a commitment to accountability, we operate with full transparency to make sure every
-        contribution reaches its intended purpose. LondyZone is more than an organization, it is
-        a movement of Zoners ensuring no one is left behind.
-      </p>
-      <div class="pillars">
-        <span>Education</span>
-        <span>Entrepreneurship</span>
-        <span>Healthcare</span>
-        <span>Personal Growth</span>
-        <span>Transparent Aid</span>
+      <div class="dock-readout" aria-live="polite">
+        <span id="viz-status">DEMO</span>
+        <span id="viz-stage">STAGE 1</span>
+        <span id="viz-time">00:00</span>
       </div>
     </section>
 
-    <section
-      id="donate"
-      class="donate"
-      data-sol-address="FraZWPczYTdqN6DqBRCqM5ed2c882vsvxmoUXXTeXXa7">
-      <h2>Donate With Solana</h2>
-      <p>Support LondyZone directly with SOL.</p>
-      <p class="wallet-row">
-        <span>Wallet:</span>
-        <code id="sol-wallet-text">FraZWPczYTdqN6DqBRCqM5ed2c882vsvxmoUXXTeXXa7</code>
-      </p>
-      <div class="donate-actions">
-        <a
-          id="sol-donate-link"
-          class="btn btn-sol"
-          href="solana:FraZWPczYTdqN6DqBRCqM5ed2c882vsvxmoUXXTeXXa7?label=LondyZone%20Donation"
-          rel="noopener noreferrer">Donate SOL</a>
-        <button id="copy-sol-wallet" class="btn btn-ghost" type="button">Copy Wallet</button>
-      </div>
-    </section>
-
-    <section id="featured" class="featured">
-      <h2>Featured Inspirations</h2>
-      <div class="people">
-        <article class="card">
-          <img
-            src="https://raypeat.com/hsray.jpg"
-            alt="Dr. Ray Peat"
-            loading="lazy">
-          <div class="card-body">
-            <h3>Dr. Ray Peat</h3>
-            <p>Featured on this LondyZone vibe page as a key reference point for curiosity and inquiry.</p>
-            <a href="https://raypeat.com/about.shtml" target="_blank" rel="noopener noreferrer">Source</a>
-          </div>
-        </article>
-        <article class="card">
-          <img
-            src="https://miro.medium.com/v2/resize:fill:640:640/1*nJGcfT1cI8QH0aEZp1Vo-g.jpeg"
-            alt="Paul Skallas"
-            loading="lazy">
-          <div class="card-body">
-            <h3>Paul Skallas</h3>
-            <p>Featured on this LondyZone vibe page as a highlighted voice connected to Lindy-oriented thinking.</p>
-            <a href="https://medium.com/@skallasp/about" target="_blank" rel="noopener noreferrer">Source</a>
-          </div>
-        </article>
-      </div>
-    </section>
+    <audio id="viz-audio" preload="metadata" hidden></audio>
   </main>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=ocean2"></script>
 </body>
 </html>
