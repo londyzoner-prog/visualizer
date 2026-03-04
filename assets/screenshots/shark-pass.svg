@@ -1,0 +1,44 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#051833"/>
+      <stop offset="0.48" stop-color="#0A2B58"/>
+      <stop offset="1" stop-color="#020A16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 300) rotate(35) scale(620 240)">
+      <stop stop-color="#5EE7FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#5EE7FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <path d="M0 730 C300 650 480 760 780 710 C1060 660 1320 760 1600 710 L1600 900 L0 900 Z" fill="#0A223D" fill-opacity="0.84"/>
+
+  <g stroke="#74EEFF" stroke-opacity="0.2">
+    <path d="M0 180 C420 140 840 220 1600 160"/>
+    <path d="M20 260 C500 210 980 300 1600 250"/>
+    <path d="M0 340 C520 300 980 390 1600 330"/>
+  </g>
+
+  <g transform="translate(920 470) scale(1.35)">
+    <polygon points="-190,0 -145,-26 -68,-36 26,-30 98,-20 170,0 98,20 26,30 -68,36 -145,26" fill="#0F5DFF" fill-opacity="0.82" stroke="#8EEFFF" stroke-opacity="0.42"/>
+    <polygon points="-190,0 -244,-18 -308,-56 -260,0 -308,56 -244,18" fill="#18D3C8" fill-opacity="0.72"/>
+    <polygon points="-24,-10 72,-28 166,-10 78,8" fill="#D9FDFF" fill-opacity="0.2"/>
+    <polygon points="28,-20 66,-96 118,-16" fill="#5EE7FF" fill-opacity="0.42"/>
+    <polygon points="22,-10 104,-40 98,-4" fill="#5EE7FF" fill-opacity="0.35"/>
+    <polygon points="22,10 104,40 98,4" fill="#5EE7FF" fill-opacity="0.35"/>
+  </g>
+
+  <g transform="translate(520 520) scale(0.75)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#5EE7FF" fill-opacity="0.6"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#18D3C8" fill-opacity="0.55"/>
+  </g>
+  <g transform="translate(1240 420) scale(0.68)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#18D3C8" fill-opacity="0.58"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#0F5DFF" fill-opacity="0.55"/>
+  </g>
+
+  <text x="74" y="92" fill="#D7FCFF" fill-opacity="0.92" font-family="Arial, sans-serif" font-size="42" font-weight="700">Shark Pass</text>
+</svg>

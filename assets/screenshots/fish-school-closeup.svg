@@ -1,0 +1,50 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="800" y1="0" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C2558"/>
+      <stop offset="0.5" stop-color="#0A3E75"/>
+      <stop offset="1" stop-color="#041426"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 680 C220 620 420 730 700 680 C980 630 1200 740 1600 690 L1600 900 L0 900 Z" fill="#0B2949" fill-opacity="0.8"/>
+
+  <g stroke="#7AF4FF" stroke-opacity="0.2">
+    <path d="M40 180 C400 120 820 220 1560 160"/>
+    <path d="M-20 260 C380 210 860 300 1620 240"/>
+    <path d="M80 340 C500 290 980 370 1540 320"/>
+  </g>
+
+  <g transform="translate(300 420) scale(0.9)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#5EE7FF" fill-opacity="0.7" stroke="#A8FBFF" stroke-opacity="0.5"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#0F5DFF" fill-opacity="0.7"/>
+  </g>
+  <g transform="translate(470 450) scale(1.1)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#18D3C8" fill-opacity="0.72" stroke="#95F8FF" stroke-opacity="0.45"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#0F5DFF" fill-opacity="0.65"/>
+  </g>
+  <g transform="translate(670 410) scale(1.25)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#5EE7FF" fill-opacity="0.78" stroke="#D9FDFF" stroke-opacity="0.45"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#18D3C8" fill-opacity="0.68"/>
+    <polygon points="-22,-8 34,-16 84,-6 36,4" fill="#E8FEFF" fill-opacity="0.25"/>
+  </g>
+  <g transform="translate(930 470) scale(1.15)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#0F5DFF" fill-opacity="0.74" stroke="#8DEBFF" stroke-opacity="0.44"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#5EE7FF" fill-opacity="0.62"/>
+  </g>
+  <g transform="translate(1140 430) scale(1.35)">
+    <polygon points="-120,0 -94,-14 -34,-22 18,-14 72,0 18,14 -34,22 -94,14" fill="#18D3C8" fill-opacity="0.8" stroke="#B9FCFF" stroke-opacity="0.44"/>
+    <polygon points="-120,0 -150,-12 -180,-36 -162,0 -180,36 -150,12" fill="#0F5DFF" fill-opacity="0.66"/>
+    <polygon points="-22,-8 34,-16 84,-6 36,4" fill="#F2FEFF" fill-opacity="0.22"/>
+  </g>
+
+  <g fill="#9CF4FF" fill-opacity="0.18">
+    <circle cx="180" cy="240" r="5"/>
+    <circle cx="260" cy="290" r="4"/>
+    <circle cx="1420" cy="270" r="6"/>
+    <circle cx="1320" cy="330" r="4"/>
+  </g>
+
+  <text x="78" y="92" fill="#D9FDFF" fill-opacity="0.92" font-family="Arial, sans-serif" font-size="42" font-weight="700">Fish School Closeup</text>
+</svg>

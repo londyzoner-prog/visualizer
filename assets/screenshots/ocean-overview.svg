@@ -1,0 +1,59 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="800" y1="0" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1B46"/>
+      <stop offset="0.55" stop-color="#083868"/>
+      <stop offset="1" stop-color="#031226"/>
+    </linearGradient>
+    <radialGradient id="lightA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240 120) rotate(25) scale(700 340)">
+      <stop stop-color="#5EE7FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5EE7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lightB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1320 80) rotate(145) scale(620 300)">
+      <stop stop-color="#18D3C8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#18D3C8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#lightA)"/>
+  <rect width="1600" height="900" fill="url(#lightB)"/>
+
+  <path d="M0 720 C240 660 440 760 700 710 C920 670 1160 760 1600 700 L1600 900 L0 900 Z" fill="#0B2E52" fill-opacity="0.7"/>
+  <path d="M0 770 C280 730 460 820 760 760 C1040 710 1300 800 1600 760 L1600 900 L0 900 Z" fill="#0A2442" fill-opacity="0.88"/>
+
+  <g fill="#5EE7FF" fill-opacity="0.18">
+    <polygon points="130,170 178,152 210,172 166,190"/>
+    <polygon points="380,210 428,192 460,212 416,230"/>
+    <polygon points="640,160 684,144 718,166 674,182"/>
+    <polygon points="960,220 1008,202 1036,220 996,238"/>
+    <polygon points="1240,180 1288,160 1322,182 1280,200"/>
+  </g>
+
+  <g transform="translate(500 470) scale(1.35)">
+    <polygon points="-190,0 -145,-25 -62,-35 20,-22 98,0 20,22 -62,35 -145,25" fill="#18D3C8" fill-opacity="0.8" stroke="#7AF4FF" stroke-opacity="0.6"/>
+    <polygon points="-190,0 -242,-22 -286,-58 -254,0 -286,58 -242,22" fill="#0F5DFF" fill-opacity="0.8" stroke="#5EE7FF" stroke-opacity="0.4"/>
+    <polygon points="-40,-10 44,-22 122,-8 46,4" fill="#D5FBFF" fill-opacity="0.28"/>
+    <polygon points="18,-20 58,-66 92,-18" fill="#5EE7FF" fill-opacity="0.42"/>
+  </g>
+
+  <g transform="translate(980 560) scale(1.02)">
+    <polygon points="-140,0 -108,-16 -42,-24 22,-16 86,0 22,16 -42,24 -108,16" fill="#5EE7FF" fill-opacity="0.68" stroke="#A8FBFF" stroke-opacity="0.4"/>
+    <polygon points="-140,0 -176,-14 -214,-42 -188,0 -214,42 -176,14" fill="#18D3C8" fill-opacity="0.72" stroke="#82F8FF" stroke-opacity="0.3"/>
+  </g>
+
+  <g transform="translate(1220 370) scale(0.78)">
+    <polygon points="-140,0 -108,-16 -42,-24 22,-16 86,0 22,16 -42,24 -108,16" fill="#0F5DFF" fill-opacity="0.75" stroke="#8FE9FF" stroke-opacity="0.35"/>
+    <polygon points="-140,0 -176,-14 -214,-42 -188,0 -214,42 -176,14" fill="#5EE7FF" fill-opacity="0.62"/>
+  </g>
+
+  <g fill="#8EEFFF" fill-opacity="0.14">
+    <circle cx="260" cy="620" r="6"/>
+    <circle cx="320" cy="580" r="4"/>
+    <circle cx="1340" cy="500" r="5"/>
+    <circle cx="1210" cy="610" r="7"/>
+    <circle cx="1090" cy="640" r="4"/>
+  </g>
+
+  <text x="72" y="84" fill="#D8FCFF" fill-opacity="0.9" font-family="Arial, sans-serif" font-size="44" font-weight="700">Ocean Current Visualizer</text>
+</svg>
